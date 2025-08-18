@@ -1,0 +1,3 @@
+real-time applications, or optimized databases, I focus on delivering solutions that solve your problems and bring real value to your project — with clean code and smooth communication.
+
+أساعد العملاء في بناء أنظمة خلفية آمنة وقابلة للتوسع باستخدام .NET، حسب احتياجاتهم. سواء كان المطلوب تطوير واجهات برمجة سريعة (APIs)، أو تطبيقات في الوقت الحقيقي، أو تحسين قواعد البيانات، فأنا أركّز على تقديم حلول تحل مشاكلك وتضيف قيمة حقيقية لمشروعك — مع كود نظيف وتواصل سلس.
