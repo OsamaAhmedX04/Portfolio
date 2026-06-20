@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOS</title>
+    <title>DevOS | Osama Ahmed Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="assets/weblogo.png">
 </head>
 <body>
-    <!-- Navbar -->
+
+    <canvas id="bg-canvas"></canvas>
+
     <nav class="navbar">
         <a href="#hero" class="logo"><i class="fas fa-code"></i>DevOS</a>
         <ul class="nav-links">
@@ -25,28 +27,24 @@
         </div>
     </nav>
 
-
-
-        <!-- Hero Section -->
-<section class="hero" id="hero">
-    <div class="hero-content">
-        <h1 class="hero-title">Hi, I'm <span>Osama Ahmed</span></h1>
-        <p class="hero-subtitle">.NET Back-End Developer</p>
-        <div class="hero-btns">
-            <a href="#contact" class="btn">Hire Me</a>
-            <a href="#projects" class="btn btn-outline">My Work</a>
+    <section class="hero" id="hero">
+        <div class="container hero-wrapper">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span>Osama Ahmed</span></h1>
+                <p class="hero-subtitle">.NET Back-End Developer</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn">Hire Me</a>
+                    <a href="#projects" class="btn btn-outline">My Work</a>
+                </div>
+            </div>
+            <div class="hero-design">
+                <div class="design-circle"></div>
+                <div class="design-dots"></div>
+            </div>
         </div>
-    </div>
-    <div class="hero-design">
-        <div class="design-circle"></div>
-        <div class="design-dots"></div>
-        <div class="design-wave"></div>
-    </div>
-</section>
+    </section>
 
-
-    <!-- About Section -->
-    <section id="about" class="section about">
+    <section id="about" class="section about reveal">
         <div class="container">
             <h2 class="section-title">About <span>Me</span></h2>
             <div class="about-content">
@@ -71,14 +69,13 @@
                             <p>Cairo, Egypt</p>
                         </div>
                     </div>
-                    <a href="assets/Osama-Ahmed-Fawzy-CV.pdf" class="btn download-btn" target="_blank">Download CV</a>
+                    <a href="assets/Osama-Ahmed-Fawzy-CV.pdf" class="btn btn-outline" target="_blank"><i class="fas fa-download"></i> Download CV</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section education">
+    <section id="education" class="section education reveal">
         <div class="container">
             <h2 class="section-title">My <span>Education</span></h2>
             <div class="timeline">
@@ -87,9 +84,8 @@
                     <div class="timeline-date">2022 - 2026</div>
                     <div class="timeline-content">
                         <h3>Bachelor's Degree in Computer Science & Artificial Intelligence</h3>
-                        <p>Capital Universty</p>
+                        <h4 style="color: var(--accent-cyan)">Capital University</h4>
                         <p>GPA: 3.73/4</p>
-
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -97,15 +93,14 @@
                     <div class="timeline-date">2019 - 2022</div>
                     <div class="timeline-content">
                         <h3>High School Diploma</h3>
-                        <p>Tabary Al-Hijaz Military Boys School.</p>
+                        <h4 style="color: var(--accent-cyan)">Tabary Al-Hijaz Military Boys School.</h4>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section experience">
+    <section id="experience" class="section experience reveal">
         <div class="container">
             <h2 class="section-title">My <span>Experience</span></h2>
             <div class="timeline">
@@ -130,90 +125,44 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
+    <section id="skills" class="section skills reveal">
         <div class="container">
             <h2 class="section-title">My <span>Skills</span></h2>
             <div class="skills-container">
                 <div class="technical-skills">
                     <h3>Technical Skills</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>HTML / CSS / JavaScript</span>
-                        </div>
-                    </div>
-                    <hr style="border: none; height: 2px; background-color: rgba(0, 0, 0, 0.09);"><br>
-                    
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Sql Server / MySql / PostgerSQL / Oracle DB</span>
-                        </div>
-                    </div>
-                    <hr style="border: none; height: 2px; background-color: rgba(0, 0, 0, 0.09);"><br>
-                    
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>C / C++ / C# / JAVA / PHP</span>
-                        </div>
-                    </div>
-                    <hr style="border: none; height: 2px; background-color: rgba(0, 0, 0, 0.09);"><br>
-                    
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>ASP.NET MVC / ASP.NET API</span>
-                        </div>
-                    </div>
-                    <hr style="border: none; height: 2px; background-color: rgba(0, 0, 0, 0.09);"><br>
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>SOLID Principles / Design Patterns / Clean Architecture </span>
-                        </div>
-                    </div>
-                    <hr style="border: none; height: 2px; background-color: rgba(0, 0, 0, 0.09);"><br>
-                    
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Git / GitHub</span>
-                        </div>
-                    </div>
+                    <div class="skill-item"><div class="skill-info"><span>HTML / CSS / JavaScript</span></div></div>
+                    <div class="skill-item"><div class="skill-info"><span>SQL Server / MySQL / PostgreSQL / Oracle DB</span></div></div>
+                    <div class="skill-item"><div class="skill-info"><span>C / C++ / C# / Java / PHP</span></div></div>
+                    <div class="skill-item"><div class="skill-info"><span>ASP.NET MVC / ASP.NET API</span></div></div>
+                    <div class="skill-item"><div class="skill-info"><span>SOLID Principles / Design Patterns / Clean Architecture</span></div></div>
+                    <div class="skill-item"><div class="skill-info"><span>Git / GitHub</span></div></div>
                 </div>
                 <div class="soft-skills">
                     <h3>Soft Skills</h3>
                     <div class="soft-skill-item">
-                        <div class="soft-skill-icon">
-                            <i class="fas fa-comments"></i>
-                        </div>
+                        <div class="soft-skill-icon"><i class="fas fa-comments"></i></div>
                         <div class="soft-skill-text">
                             <h4>Communication</h4>
                             <p>Excellent verbal and written communication skills</p>
                         </div>
                     </div>
                     <div class="soft-skill-item">
-                        <div class="soft-skill-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
+                        <div class="soft-skill-icon"><i class="fas fa-users"></i></div>
                         <div class="soft-skill-text">
                             <h4>Teamwork</h4>
                             <p>Collaborate effectively with team members</p>
                         </div>
                     </div>
                     <div class="soft-skill-item">
-                        <div class="soft-skill-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
+                        <div class="soft-skill-icon"><i class="fas fa-lightbulb"></i></div>
                         <div class="soft-skill-text">
                             <h4>Problem Solving</h4>
                             <p>Analytical approach to solving complex problems</p>
                         </div>
                     </div>
                     <div class="soft-skill-item">
-                        <div class="soft-skill-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
+                        <div class="soft-skill-icon"><i class="fas fa-handshake"></i></div>
                         <div class="soft-skill-text">
                             <h4>Adaptability</h4>
                             <p>Easily adapts to different roles and team dynamics</p>
@@ -224,160 +173,111 @@
         </div>
     </section>
 
-
-<!-- Projects Section -->
-<section id="projects" class="section projects">
-    <div class="container">
-        <h2 class="section-title">My <span>Projects</span></h2>
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="assets/ProSphere.png" alt="ProSphere">
-                </div>
-                <div class="project-details">
-                    <h3>Creator & Investor Collaboration</h3>
-                    <p>A powerful platform that connects creators with investors — inspired by the spirit of Shark Tank</p>
-                    <div class="project-links">
-                        <a href="https://github.com/OsamaAhmedX04/ProSphere" class="btn btn-small" target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
+    <section id="projects" class="section projects reveal">
+        <div class="container">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img"><img src="assets/ProSphere.png" alt="ProSphere"></div>
+                    <div class="project-details">
+                        <h3>Creator & Investor Collaboration</h3>
+                        <p>A powerful platform that connects creators with investors — inspired by the spirit of Shark Tank</p>
+                        <div class="project-links">
+                            <a href="https://github.com/OsamaAhmedX04/ProSphere" class="btn btn-small" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="assets/TumorHospital.jpg" alt="Hospital">
-                </div>
-                <div class="project-details">
-                    <h3>Tumor Hospital</h3>
-                    <p>A hospital management system focused on tumor patients, including patient records, appointments, diagnosis tracking, and doctor coordination</p>
-                    <div class="project-links">
-                        <a href="https://github.com/OsamaAhmedX04/Tumor-Hospital" class="btn btn-small" target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
+                <div class="project-card">
+                    <div class="project-img"><img src="assets/TumorHospital.jpg" alt="Hospital"></div>
+                    <div class="project-details">
+                        <h3>Tumor Hospital</h3>
+                        <p>A hospital management system focused on tumor patients, including patient records, appointments, diagnosis tracking, and doctor coordination</p>
+                        <div class="project-links">
+                            <a href="https://github.com/OsamaAhmedX04/Tumor-Hospital" class="btn btn-small" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="assets/ERP.jpg" alt="ERP">
-                </div>
-                <div class="project-details">
-                    <h3>Optima ERP System</h3>
-                    <p>About Centralized ERP solution using ASP.NET MVC for managing core business operations.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/OsamaAhmedX04/Optima-ERP" class="btn btn-small" target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="https://optima.runasp.net/" class="btn btn-small btn-outline" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
+                <div class="project-card">
+                    <div class="project-img"><img src="assets/ERP.jpg" alt="ERP"></div>
+                    <div class="project-details">
+                        <h3>Optima ERP System</h3>
+                        <p>Centralized ERP solution using ASP.NET MVC for managing core business operations.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/OsamaAhmedX04/Optima-ERP" class="btn btn-small" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://optima.runasp.net/" class="btn btn-small btn-outline" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="assets/RentProperty.jpg" alt="Property Rental Platform">
-                </div>
-                <div class="project-details">
-                    <h3>Property Rental Platform</h3>
-                    <p>A full-featured Rental Platform built with ASP.NET Core API.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/OsamaAhmedX04/RentMate" class="btn btn-small" target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
+                <div class="project-card">
+                    <div class="project-img"><img src="assets/RentProperty.jpg" alt="Property Rental Platform"></div>
+                    <div class="project-details">
+                        <h3>Property Rental Platform</h3>
+                        <p>A full-featured Rental Platform built with ASP.NET Core API.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/OsamaAhmedX04/RentMate" class="btn btn-small" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Project 5 -->
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="assets/GameStoreDB.jpg" alt="GameStore Database">
-                </div>
-                <div class="project-details">
-                    <h3>GameStore Database</h3>
-                    <p>Game Store & Social Platform - SQL Server Project</p>
-                    <div class="project-links">
-                        <a href="https://github.com/OsamaAhmedX04/GameStoreDB" class="btn btn-small" target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
+                <div class="project-card">
+                    <div class="project-img"><img src="assets/GameStoreDB.jpg" alt="GameStore Database"></div>
+                    <div class="project-details">
+                        <h3>GameStore Database</h3>
+                        <p>Game Store & Social Platform - SQL Server Project</p>
+                        <div class="project-links">
+                            <a href="https://github.com/OsamaAhmedX04/GameStoreDB" class="btn btn-small" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Project 6 -->
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="assets/TheEvilRises.jpg" alt="The Evil Rises Game">
-                </div>
-                <div class="project-details">
-                    <h3>The Evil Rises Game</h3>
-                    <p>The Epic Quest of the Hero — Terminal RPG Game</p>
-                    <div class="project-links">
-                        <a href="https://github.com/OsamaAhmedX04/The-Evil-Rises" class="btn btn-small" target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="https://osama-ahmed-s.itch.io/the-evil-rises" class="btn btn-small btn-outline" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Download
-                        </a>
+                <div class="project-card">
+                    <div class="project-img"><img src="assets/TheEvilRises.jpg" alt="The Evil Rises Game"></div>
+                    <div class="project-details">
+                        <h3>The Evil Rises Game</h3>
+                        <p>The Epic Quest of the Hero — Terminal RPG Game</p>
+                        <div class="project-links">
+                            <a href="https://github.com/OsamaAhmedX04/The-Evil-Rises" class="btn btn-small" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://osama-ahmed-s.itch.io/the-evil-rises" class="btn btn-small btn-outline" target="_blank"><i class="fas fa-external-link-alt"></i> Download</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <!-- Contact Section -->
-<section id="contact" class="section contact">
-    <div class="container">
-        <h2 class="section-title">Contact <span>Me</span></h2>
-        <div class="contact-container">
-            <div class="contact-info" style="max-width: 700px; margin: 0 auto; width: 100%;">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
+    <section id="contact" class="section contact reveal">
+        <div class="container">
+            <h2 class="section-title">Contact <span>Me</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>osamaahmedx04@gmail.com</p>
+                        </div>
                     </div>
-                    <div class="contact-text">
-                        <h3>Email</h3>
-                        <p>osamaahmedx04@gmail.com</p>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+20 102 397 0604</p>
+                        </div>
                     </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Cairo, Egypt</p>
+                        </div>
                     </div>
-                    <div class="contact-text">
-                        <h3>Phone</h3>
-                        <p>+20 102 397 0604</p>
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/osama-ahmed-a636032b5/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/OsamaAhmedX04" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h3>Location</h3>
-                        <p>Cairo, Egypt</p>
-                    </div>
-                </div>
-                <div class="contact-social">
-                    <a href="https://www.linkedin.com/in/osama-ahmed-a636032b5/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/OsamaAhmedX04" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -405,7 +305,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Osama Portfolio. All Rights Reserved.</p>
+                <p>&copy; 2026 Osama Portfolio. All Rights Reserved.</p>
                 <div class="footer-social">
                     <a href="https://www.linkedin.com/in/osama-ahmed-a636032b5/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/OsamaAhmedX04" target="_blank"><i class="fab fa-github"></i></a>
